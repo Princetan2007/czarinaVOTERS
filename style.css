@@ -1,0 +1,243 @@
+p, ul {
+    border: 2px solid rgb(4, 3, 3);
+    outline: solid 10px #5b0e0e;
+    margin: auto;  
+    padding: 20px;
+    text-align: center;
+}
+
+b {
+    text-shadow: 2px 2px 4px black;
+}
+
+p {
+    background-color: ghostwhite;
+    color: black;
+}
+
+ul {
+    background-color: white;
+    color: black;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    width: 140px;
+    height: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+}
+
+.navbar ul li a {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(170, 75, 75);
+    padding: 5px 13px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+    background: rgb(67, 58, 60);
+    border-radius: 2px;
+}
+
+/* Header Styling */
+.header {
+    padding: 200px;
+    text-align: center;
+    background-image: url(votewisely.png);
+   
+    font-size: 30px;
+    
+}
+
+    @keyframes typing {
+        0% {
+            width: 0;
+        }
+        50% {
+            width: 100%;
+        }
+        100% {
+            width: 0;
+        }
+    }
+    
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+    
+    .header h1 {
+        font-size: 40px;
+        color: black;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid black;
+        animation: typing 8s steps(80, end) infinite, blink 0.75s  step-end infinite;
+    }
+
+/* Section Styling */
+.section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    color: rgb(184, 39, 39);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #a10505;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: bounceIn 4s ease-in-out infinite;
+}
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 0.9;
+        transform: scale(1.1);
+    }
+    70% {
+        opacity: 1;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+p, ul {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: left;
+    
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.content {
+    padding: 10px;
+    font-family: monospace;
+    background: ghostwhite;
+    text-decoration: initial;
+    justify-content: center;
+}
+
+/* Background Images */
+#home {
+    background: url(votewisely.png) no-repeat center center/cover;
+    margin-top: 80px;
+    padding: 500px; 
+    transition: scroll 4s ease-in-out;
+}
+
+
+#about{
+transition: scroll 4s ease-in-out;  
+}
+#significance{
+    background: url(voters.png) no-repeat center center/cover;
+    margin-top: 80px;
+    padding: 500px; 
+}
+
+/* Slower Scrolling */
+html, body {
+    transition: scroll 4s ease-in-out;
+}
+
+.image-container img {
+width: 100%;
+max-width: 800px; 
+height: auto;
+display: block;
+margin: 20px auto;
+}
+
+
+
+.navbar ul li a {
+font-size: 20px;
+font-family: 'Roboto', sans-serif;
+color: rgb(170, 75, 75);
+padding: 5px 13px;
+text-decoration: none;
+transition: 0.4s;
+}
+
+/* Add some styles for hover or active link */
+.navbar ul li a.active,
+.navbar ul li a:hover {
+background: rgb(67, 58, 60);
+border-radius: 2px;
+}
+
+.section {
+height: 100vh;  /* Full screen height for each section */
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+padding: 20px;
+background-color: lightgray;
+}
+
+#home, #news, #feedback, #learn-more {
+padding: 50px;
+background-color: white;
+}
+
+
+
+
